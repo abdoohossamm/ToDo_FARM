@@ -35,7 +35,10 @@ function Main(){
                         <button className="form-submit-btn"  onClick={addTodoHandler}>Add Task</button>
                     </span>
             </div>
-
+            <div className="card-body">
+                <h5 className="card bg-cyan-800 text-white bg-dark mb-3">Your Tasks</h5>
+                <TodoListView todoList={todoList} />
+            </div>
         </div>
     );
 }
