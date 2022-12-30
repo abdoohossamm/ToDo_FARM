@@ -20,3 +20,22 @@ a {
 html{
   scroll-behavior: smooth;
 }
+
+@layer components {
+  .card {
+    @apply mx-auto p-[1.5%] sm:w-[80%] md:w-[65%] lg:w-[50%] mt-3 rounded-xl;
+  }
+  .card-body{
+    @apply my-4 border-2 border-cyan-800 rounded-xl p-5 sm:w-[80%] md:w-[65%] lg:w-[50%] mx-auto;
+  }
+  .contact-form{
+    @apply items-center py-10 mx-[5%] lg:mx-[5%] flex flex-col gap-6 sm:pr-0 my-auto;
+  }
+  .contact-form input, textarea{
+    @apply w-[80%] p-4 rounded-2xl bg-transparent border border-2 border-cyan-300 dark:border-cyan-800 resize-none text-black dark:text-white;
+
+  }
+  .form-submit-btn{
+    @apply bg-gradient-to-r from-cyan-700 to-teal-400 text-white text-lg px-4 py-2 rounded-full w-fit;
+  }
+}
